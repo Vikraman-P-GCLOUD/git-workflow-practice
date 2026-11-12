@@ -25,4 +25,13 @@ function sum(numbers) {
   return numbers.reduce((total, n) => total + n, 0);
 }
 
-module.exports = { formatName, isValidEmail, sum };
+/**
+ * Capitalize the first letter of a word.
+ * capitalize("vikram") -> "Vikram"
+ */
+function capitalize(word) {
+  if (!word) return "";
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+module.exports = { formatName, isValidEmail, sum, capitalize };
