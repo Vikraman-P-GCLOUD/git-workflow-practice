@@ -1,4 +1,4 @@
-# Git Workflow Practice — Version A
+# Git Workflow Practice
 
 Hands-on practice of the Git / GitHub workflow from the trainings
 *06. Developing Software using Git Workflow*, *07. Github Issues Testing* and *09. Project development Setup*.
@@ -28,6 +28,7 @@ The step-by-step guide is in **[docs/WORKFLOW.md](docs/WORKFLOW.md)**.
 | #2 | Bug | `fix/2-email-validation` | Bug report, failing tests first, then the fix |
 | #3 | Docs | `docs/3-workflow-guide` | Documentation change through a PR |
 | #4 | Practice | `practice/4-ci-check` | CI catching a broken change, then passing after the fix |
+| #9 | Practice | `practice/9-conflict-a` + `-b` | Two branches edited the same line; merge conflict resolved by hand |
 
 ## Running locally
 
