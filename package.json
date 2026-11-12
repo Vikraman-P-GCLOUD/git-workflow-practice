@@ -1,0 +1,1 @@
+{"name":"git-workflow-practice","version":"1.0.0","description":"Practice repo for the Git / GitHub workflow: issues, branches, pull requests, reviews and CI","scripts":{"test":"node --test"},"license":"MIT"}
