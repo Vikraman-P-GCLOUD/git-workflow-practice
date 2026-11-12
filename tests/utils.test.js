@@ -3,7 +3,7 @@
 
 const test = require("node:test");
 const assert = require("node:assert");
-const { formatName, isValidEmail, sum } = require("../src/utils");
+const { formatName, isValidEmail, sum, capitalize } = require("../src/utils");
 
 test("formatName joins first and last name", () => {
   assert.strictEqual(formatName("vikram", "an"), "vikram an");
@@ -19,4 +19,12 @@ test("sum adds numbers", () => {
 
 test("sum of an empty list is 0", () => {
   assert.strictEqual(sum([]), 0);
+});
+
+test("capitalize uppercases the first letter", () => {
+  assert.strictEqual(capitalize("vikram"), "Vikram");
+});
+
+test("capitalize handles an empty string", () => {
+  assert.strictEqual(capitalize(""), "");
 });
