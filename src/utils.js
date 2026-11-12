@@ -22,7 +22,7 @@ function isValidEmail(email) {
  * sum([1, 2, 3]) -> 6
  */
 function sum(numbers) {
-  return numbers.reduce((total, n) => total + n, 0);
+  return numbers.reduce((total, n) => total + n, 1);
 }
 
 /**
