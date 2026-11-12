@@ -11,10 +11,10 @@ function formatName(first, last) {
 
 /**
  * Check whether a string looks like an email address.
- * NOTE: this has a known bug — see the "Bug: invalid emails are accepted" issue.
+ * Needs text before the @, a domain after it, and a dot in the domain.
  */
 function isValidEmail(email) {
-  return email.includes("@");
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
 /**
