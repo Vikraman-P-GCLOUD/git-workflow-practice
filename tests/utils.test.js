@@ -13,6 +13,18 @@ test("isValidEmail accepts a normal email", () => {
   assert.strictEqual(isValidEmail("someone@example.com"), true);
 });
 
+test("isValidEmail rejects an email with no domain", () => {
+  assert.strictEqual(isValidEmail("abc@"), false);
+});
+
+test("isValidEmail rejects an email with no name", () => {
+  assert.strictEqual(isValidEmail("@gmail.com"), false);
+});
+
+test("isValidEmail rejects a domain without a dot", () => {
+  assert.strictEqual(isValidEmail("abc@gmail"), false);
+});
+
 test("sum adds numbers", () => {
   assert.strictEqual(sum([1, 2, 3]), 6);
 });
