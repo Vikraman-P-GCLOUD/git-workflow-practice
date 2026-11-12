@@ -20,6 +20,7 @@ function isValidEmail(email) {
 /**
  * Add up an array of numbers.
  * sum([1, 2, 3]) -> 6
+ * An empty list returns 0, so the starting value must stay 0.
  */
 function sum(numbers) {
   return numbers.reduce((total, n) => total + n, 0);
