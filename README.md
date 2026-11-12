@@ -1,4 +1,4 @@
-# Git Workflow Practice
+# Git Workflow Practice — Version B
 
 Hands-on practice of the Git / GitHub workflow from the trainings
 *06. Developing Software using Git Workflow*, *07. Github Issues Testing* and *09. Project development Setup*.
